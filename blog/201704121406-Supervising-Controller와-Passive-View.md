@@ -36,16 +36,17 @@ Passive View 패턴을 구성하는 프레젠터는 Supervising Controller의 �
 
 이렇게 하는 나름의 타당한 이유가 있는데,
 
- * 일반적으로 Presenter는 데이터 소스로부터 데이터를 얻어오는 비지니스 로직을 수행하는데, IO와 관련되어 있을 경우가 많아 Async하게 작업을 수행하는 경우가 많다.
+> 일반적으로 Presenter는 데이터 소스로부터 데이터를 얻어오는 비지니스 로직을 수행하는데, IO와 관련되어 있을 경우가 많아 Async하게 작업을 수행하는 경우가 많다.
 
-   * View와 Presenter의 생명주기가 달라질수 있어서 Presenter는 적절하게 해당 사항에 대한 처리도 해주어야 한다.
-   * 비지니스 로직과 생명주기 관리 이외에, View 로직 수행을 위해 View의 세부사항을 너무 많이 알게되면 Presenter가 비대해질 수 있다.
-   * 따라서 이러한 경우는 Supervising Controller의 역할을 수행하는게 적절하다.
+ * View와 Presenter의 생명주기가 달라질수 있어서 Presenter는 적절하게 해당 사항에 대한 처리도 해주어야 한다.
+ * 비지니스 로직과 생명주기 관리 이외에, View 로직 수행을 위해 View의 세부사항을 너무 많이 알게되면 Presenter가 비대해질 수 있다.
+ * 따라서 이러한 경우는 Supervising Controller의 역할을 수행하는게 적절하다.
 
- * 때때로는 Widget에 들어가는 로직이 복잡하여 테스트를 수행하고 싶을때가 있다.
-   * 다른말로, Widget을 Passive View로 만들고 싶을때가 있다.
-   * 이때는 Widget와 로직을 분리한 Presenter의 생명주기가 같다.
-   * 만일 이때도 동일하게 Presenter라고 이름짓는다면 혼란스러울 것이기 때문에 다른이름(나의 경우는 ViewController)을 짓는것이 낫다.
+> 때때로는 Widget에 들어가는 로직이 복잡하여 테스트를 수행하고 싶을때가 있다.
+
+ * 다른말로, Widget을 Passive View로 만들고 싶을때가 있다.
+ * 이때는 Widget와 로직을 분리한 Presenter의 생명주기가 같다.
+ * 만일 이때도 동일하게 Presenter라고 이름짓는다면 혼란스러울 것이기 때문에 다른이름(나의 경우는 ViewController)을 짓는것이 낫다.
 
 Tag
 ====
