@@ -23,7 +23,6 @@ Supervising Controller는 뷰를 Observer Synchronization 측면에서 바라보
 
 Passive View 패턴을 구성하는 프레젠터는 Supervising Controller의 역할을 넘어서 뷰의 동작하나하나를 관리한다. (그래서 뷰는 매우 수동적인 객체가 된다)
 
- * Passive View
  * 모든 View 로직이 Controller안에 들어감
  * View의 거의 모든 행동들이 테스트 가능해짐
  * Presenter가 너무 많은것을 알아야함
