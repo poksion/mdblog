@@ -38,7 +38,7 @@ y = g(x)라는 그래프와 y = x 라는 그래프의 교점
 
 <div align="center"><img src="_img/simple_fixed.png"/></div>
 
-(~~원래 그래프 자료가 있었는데 유실되었어요 ㅠㅠ~~ 자료 찾음!)
+(<del>원래 그래프 자료가 있었는데 유실되었어요 ㅠㅠ</del> 자료 찾음!)
 
 그리하여 x의 sequence가 Cauchy Criterion을 만족하면 (즉 어떤 i 가 있어서 |x(i+1) - x(i)| < tolerance) 그때의 x(i+1)를 해라고 할수 있게 된다.
 
