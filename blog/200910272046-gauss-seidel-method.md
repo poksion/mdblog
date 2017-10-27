@@ -34,7 +34,13 @@ y = g(x)라는 그래프와 y = x 라는 그래프의 교점
 
 예를들어, f(x) = sqrt(x) - x = 0 을 구하는게 원래 목적이었다면 g(x) = sqrt(x)라고 하고 g(x) = x의 해를 구하는것과 f(x) = 0 의 해를 구하는게 같음을 알 수 있다.
 
-이제부터가 이 방법의 재미난 점인데, x(i+1) = g( x(i) ) 라고 하고 i를 증가하면 x(i+1)이 y=g(x)와 y=x의 교점에 다가감을 알수 있다.(원래 그래프 자료가 있었는데 유실되었어요 ㅠㅠ) 그리하여 x의 sequence가 Cauchy Criterion을 만족하면 (즉 어떤 i 가 있어서 |x(i+1) - x(i)| < tolerance) 그때의 x(i+1)를 해라고 할수 있게 된다.
+이제부터가 이 방법의 재미난 점인데, x(i+1) = g( x(i) ) 라고 하고 i를 증가하면 x(i+1)이 y=g(x)와 y=x의 교점에 다가감을 알수 있다.
+
+<div align="center"><img src="_img/simple_fixed.png"/></div>
+
+(~~원래 그래프 자료가 있었는데 유실되었어요 ㅠㅠ~~ 자료 찾음!)
+
+그리하여 x의 sequence가 Cauchy Criterion을 만족하면 (즉 어떤 i 가 있어서 |x(i+1) - x(i)| < tolerance) 그때의 x(i+1)를 해라고 할수 있게 된다.
 
 위 내용을 Octave(matlab) 코드로 짜보면 다음과 같다.
 
